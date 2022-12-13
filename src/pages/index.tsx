@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 
 import Layout from "../components/Layout";
 import BasicMeta from "../components/meta/BasicMeta";
@@ -18,11 +18,7 @@ export default function Index() {
           <div className={styles.container}>
             <div className={styles["heading-container"]}>
               <div className={styles["image-container"]}>
-                <Image
-                  alt="headshot"
-                  src="/images/rpark-headshot.jpg"
-                  layout="fill"
-                />
+                <img alt="headshot" src="/images/rpark-headshot.jpg" />
               </div>
 
               <img />
