@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import Layout from "../components/Layout";
 import BasicMeta from "../components/meta/BasicMeta";
 import OpenGraphMeta from "../components/meta/OpenGraphMeta";
@@ -15,7 +17,13 @@ export default function Index() {
         <div className={`${styles.col} ${styles["info-col"]}`}>
           <div className={styles.container}>
             <div className={styles["heading-container"]}>
-              <div className={styles["image-container"]}></div>
+              <div className={styles["image-container"]}>
+                <Image
+                  alt="headshot"
+                  src="/images/rpark-headshot.jpg"
+                  layout="fill"
+                />
+              </div>
 
               <img />
               <h1 className={styles.title}>
