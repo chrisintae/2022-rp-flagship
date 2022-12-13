@@ -1,14 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@200;300;400;500&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap');
 
 :root {
-  --sans-ff: 'Advent Pro', sans-serif;
-  --serif-ff: 'Playfair Display', serif;
-  --black: #000;
+  --sans-ff: 'Kumbh Sans', sans-serif;
+  --black: #212121;
+  --white: #fff;
+  --bronze: #bb9865;
+
+  --terracotta: #e2725b;
+  --dk-terrcotta: #7d3a25;
+  --midnight: #000220;
+
+  --text-color: var(--midnight);
+  --contact-bg-color: #bb986580;
+  --contact-bg-color-hover: #bb9865cf;
+  --shadow: #21212180;
 }
 
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 html,

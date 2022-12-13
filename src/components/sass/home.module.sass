@@ -1,3 +1,132 @@
+// main elements
+.wrapper
+    display: flex
+    flex-direction: row
+    background: var(--white)
+    overflow: hidden
+    margin-top: 1rem
+
+.col
+    flex: 1
+
+    &.info-col
+        overflow-y: auto
+        scrollbar-color: var(--dk-terrcotta) var(--terracotta)
+        scrollbar-width: thin
+
+    &.img-col
+        display: none
+
+        @media screen and (min-width: 768px)
+            display: block
+            background: url(/images/rpark-main.jpg)
+            background-repeat: no-repeat
+            background-size: cover
+            background-position: 50%
+
 .container
-    width: 80vw
+    width: 100%
+    display: flex
+    flex-direction: column
+    gap: 2rem
     margin: auto
+    padding: 2.5rem 1.5rem
+
+@media screen and (min-width: 768px)
+    .wrapper
+        height: 90vh
+        margin: 0 2vw
+        border-top: 0.5rem solid var(--dk-terrcotta)
+        border-radius: 2rem
+        box-shadow: 0 0.5rem 0.75rem var(--shadow)
+        overflow: hidden
+
+// heading container
+.heading-container
+    .image-container
+        width: 100%
+
+        > div
+            position: unset !important
+            width: 160px
+            height: 160px
+
+        img
+            object-fit: contain
+            width: 100% !important
+            position: relative !important
+            height: unset !important
+            border-radius: 100%
+
+    h1
+
+        &.name
+            margin: 0.875rem 0 1.25rem
+
+            font-size: 3.5rem
+            font-weight: 300
+            line-height: 1
+            letter-spacing: 0.875rem
+            color: var(--text-color)
+
+        &.title
+            margin-bottom: 0
+
+            font-size: 0.875rem
+            font-weight: 700
+            line-height: 1.4
+            letter-spacing: 1px
+            color: var(--text-color)
+
+    h3
+        font-size: 0.875rem
+        font-weight: 700
+        line-height: 1.4
+        letter-spacing: 0.25rem
+        text-transform: uppercase
+        color: var(--text-color)
+
+    span
+        display: block
+
+    @media screen and (min-width: 768px)
+        h1
+            &.name
+                line-height: 1.4
+
+            span
+                display: inline
+
+.desc-container
+    p
+        font-size: 1rem
+        font-weight: 300
+        line-height: 1.8
+        margin-bottom: 1.25rem
+        color: var(--text-color)
+
+        &:last-child
+            margin-bottom: 0
+
+.skills-container
+    border-left: 1px solid var(--black)
+
+    ul
+        list-style: none
+        padding: 0.875rem 0
+
+        li
+            margin-left: 1.25rem
+
+            font-size: .875rem
+            font-weight: 300
+            line-height: 1.8
+            color: var(--text-color)
+
+.experience-container
+    ul
+        list-style: none
+
+        li
+            line-height: 1.8
+            color: var(--text-color)
